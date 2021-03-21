@@ -1,7 +1,7 @@
 <template>
   <div>
     Header
-  {{usersList}}
+  {{ usersList }}
   </div>
 </template>
 
@@ -13,7 +13,7 @@ import { mapGetters } from 'vuex';
 export default {
   name: 'Header',
   computed: {
-    ...mapGetters('users', ['usersList'])
+    ...mapGetters("users", ["usersList"])
   }
 }
 </script>
