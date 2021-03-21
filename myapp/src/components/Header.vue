@@ -1,9 +1,19 @@
 <template>
-  <div>Header</div>
+  <div>
+    Header
+  {{usersList}}
+  </div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
+
+//mapGetters('users', ['usersList']);
+
 export default {
-  name: 'Header'
+  name: 'Header',
+  computed: {
+    ...mapGetters('users', ['usersList'])
+  }
 }
 </script>
